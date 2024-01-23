@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    This page contains keywords related to timeout setup.
+Resource    library_setup.robot
 
 
 *** Variables ***

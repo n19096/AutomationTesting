@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    This file contains the keywords to set the resolution of the screen as per requirement.
+Resource    library_setup.robot
 
 *** Variables ***
 

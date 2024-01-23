@@ -570,7 +570,7 @@ Convert To Amt: Convert string to dollars
     ${number3}= 		Set Variable	${value}
     ${currstring} = 	Evaluate		"{:,.0f}".format(${number3})
     ${number2} = 		Catenate    $${currstring}.00
-    [Return]        ${number2}
+    RETURN        ${number2}
 
 ApplicationPage: Validate Applicant Info In Summary Details
     [Documentation]    validates applicant info in summary page

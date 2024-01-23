@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    Miscellaneous keywords.
+Resource    library_setup.robot
 
 *** Variables ***
 

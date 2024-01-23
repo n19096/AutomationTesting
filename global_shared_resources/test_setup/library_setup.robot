@@ -4,7 +4,7 @@ Documentation     This file contains objects to import libraries and resource fi
 ###################
 # Library imports #
 ###################
-Library     SeleniumLibrary
+#Library     SeleniumLibrary
 Library     String
 Library     Screenshot
 Library     Collections

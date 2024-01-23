@@ -1,5 +1,8 @@
 *** Settings ***
 Documentation     This resource file contains objects to setup the browser.
+Resource    timeout_setup.robot
+Resource    misc_setup.robot
+Resource    library_setup.robot
 
 *** Variables ***
 #===========================================================
@@ -81,6 +84,7 @@ Set Chrome Browser
     ####################
 
     ${chrome_options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+
 #    Call Method    ${chrome_options}    add_argument    headless
 #    Call Method    ${chrome_options}    add_argument    window-size=1920,1080
     Call Method    ${chrome_options}    add_argument    --disable-extensions

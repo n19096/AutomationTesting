@@ -28,7 +28,7 @@ DB: Read Data from Db for Audit tab
     ${dboutput} =     Query         select FORMAT(A.ActivityDate,'M/d/yyyy') as AuditDate,A.Description,U.FirstName+' '+U.LastName as Name from [General].[ActivityLogs] A join dbo.ASPNetUsers U on A.CreatedBy=U.Id where ProjectId in (Select Id from Projects.Projects where Name like '%${proj_name}%' and isDeleted = 0) and A.ActivityLogType=13 order by A.ActivityDate Desc;
     @{dboutput} =     Convert To List     ${dboutput}
     Log To Console      ${dboutput}
-    [Return]    @{dboutput}
+    RETURN    @{dboutput}
 
 DB: Read Data from Db for Correspondence tab notes section
     [Arguments]     ${proj_name}

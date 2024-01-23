@@ -238,7 +238,7 @@ Create List To Generate Random Variable    [Arguments]    ${number_of_elements_o
     END    
     # ===================
     Set Global Variable    ${num_list}    ${num_list}
-    [Return]    ${num_list}
+    RETURN    ${num_list}
 
 Javascript Scroll To Bottom of Page
     [Documentation]    Gets the window size of the browser page and then scrolls
@@ -309,7 +309,7 @@ Get Vertical Position Using JS
     ...    ELSE    Execute Javascript    return $("${element_ready}").position()
 
     ${get_vertical_pos}=    Get From Dictionary    ${get_positions}    top
-    [Return]    ${get_vertical_pos}
+    RETURN    ${get_vertical_pos}
 
 Load jQuery On Page
     [Documentation]    On pages where jQuery may not be loaded onto a page by default, running 
@@ -362,28 +362,28 @@ Get Variable Count    [Arguments]    ${element}    ${tag_to_use}=jquery
     Set Fail Message Details
     Set Test Variable    ${var_count}    ${total_count}
     
-    [Return]    ${total_count}
+    RETURN    ${total_count}
     
 Remove Element Variable Tag
     [Arguments]    ${element}    ${tag_to_remove}=(jquery|css)=
     ${removeVarTag}=
     ...    Remove chars using regex
     ...    ${element}    chars_to_remove=${tag_to_remove}
-    [Return]    ${removeVarTag}
+    RETURN    ${removeVarTag}
 
 Remove Chars Using Regex
     [Arguments]    ${element}    ${chars_to_remove}=(jquery|css)=    ${num_to_remove}=-1
     ${removeChars}
     ...    Replace String Using Regexp
     ...    ${element}    (?i)${chars_to_remove}    ${EMPTY}    count=${num_to_remove}
-    [Return]    ${removeChars}
+    RETURN    ${removeChars}
 
 Randomizer    [Arguments]    ${set_randomize_num}=2    ${set_test_var}=False    ${range_start}=0
     [Documentation]    Defaults to selecting 0 or 1 to make random 50/50 decision. Optional argument can be given by providing a different number; if 3 is entered, random decision of 0-2 will be given, etc.
     ${randomizer}    Evaluate    random.randint(${range_start},${set_randomize_num}-1)    modules=random
     Run Keyword If    ${set_test_var} == True
     ...    Set Test Variable    ${randomizer}    ${randomizer}
-    [Return]    ${randomizer}
+    RETURN    ${randomizer}
 
 ## ============================================
 ## ============================================
@@ -399,7 +399,7 @@ Get Last Date Of A Month
     ${next_month_year}    Set Variable If    ${month}== 12     ${year+1}      ${year}
     ${first_of_next_month}    Convert Date   ${next_month}/01/${next_month_year}      result_format=%m/%d/%Y         date_format=%m/%d/%Y
     ${current_month_last_day}    Subtract Time From Date     ${first_of_next_month}     1 days      result_format=%d   date_format=%m/%d/%Y
-    [Return]    ${current_month_last_day}
+    RETURN    ${current_month_last_day}
 
 Global Switch Window If Link Opens In New Window
     [Documentation]    This checks to see if the window opens, and will switch to 
@@ -414,7 +414,7 @@ Global Switch Window If Link Opens In New Window
     ${opened_in_new_window}    Evaluate    ${countOfWinAft}==${countOfWinBef+1}
     Set Test Variable    ${is_opened_in_new_window}    ${opened_in_new_window}
     Run Keyword If    ${opened_in_new_window}    Switch Window    New
-    [Return]    ${opened_in_new_window}
+    RETURN    ${opened_in_new_window}
     
 Global Click On Link, Validate The Page Title And Content
     [Documentation]    Clicks on a link, and validates the page title and content on Page
@@ -496,14 +496,14 @@ Get The Status Code Of A Link
     ...    Log    The Response Code of link: ${link} is None. Please check the Log.    level=WARN
     ...    ELSE       Print To Log And Console     Status Code: ${response}
     ${resp_code}     Convert To String    ${response}
-    [Return]    ${resp_code}   
+    RETURN    ${resp_code}   
 
 Get Current Date In Pacific Time
     [Arguments]    ${result_format}=timestamp
     [Documentation]    Returns current date in PST.  
     
     ${cur_date_in_pst}    Get Time Based On Timezone    ${timezone_pacific_format}    ${result_format} 
-    [Return]    ${cur_date_in_pst}        
+    RETURN    ${cur_date_in_pst}        
     
 Open New Tab
     [Arguments]    ${page_url}
@@ -527,7 +527,7 @@ Open New Tab
     Wait until Keyword Succeeds    2x    2s
     ...    Go To    ${page_url}
     
-    [Return]    ${new_tab}
+    RETURN    ${new_tab}
 
 Click Outside The Popup To Close
     [Documentation]    To close few popup's by clicking outside of it on the page
@@ -548,7 +548,7 @@ Get The Cookies
         ${current_cookie_value}    Set Variable    ${current_cookie_key_and_value}[1]
         Set To Dictionary 	${cookies} 	    ${current_cookie_key} 	${current_cookie_value}
     END
-    [Return]    ${cookies}
+    RETURN    ${cookies}
     
 Verify That New Window Is Opened
     [Arguments]
@@ -593,7 +593,7 @@ Run Keyword And Continue On Failure By Logging Error Message
     
 Get Window Scroll Start Position
     [Documentation]    Get window scroll start position value
-    [Return]    ${val}
+    RETURN    ${val}
     
     ${val}    Execute Javascript    return window.startScrollPos
 
@@ -620,4 +620,4 @@ Read Excel Data
             Append To List      ${dictlist}     ${datadict}
         END
 #        Append To List      ${dictlist}     ${datadict}
-    [Return]    ${dictlist}
+    RETURN    ${dictlist}

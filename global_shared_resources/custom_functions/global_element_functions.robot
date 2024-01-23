@@ -123,7 +123,7 @@ Select Random Clickable Answer
     ${selected_option_num}=    Run Keyword If    ${element_count} > 0
     ...    Select Clickable Answer    
     ...    ${element}    ${count}    ${delay}
-    [Return]    ${selected_option_num}
+    RETURN    ${selected_option_num}
     
 Select Clickable Answer
     [Arguments]
@@ -158,7 +158,7 @@ Select Clickable Answer
     Run Keyword If
     ...    ${lower_count} > 0 and ${check_list_length} <= 1
     ...    Log To Console    Not enough items in the element count list to click on the designated number requested.
-    [Return]    ${random}
+    RETURN    ${random}
     
 Select dropdown menu answer
     [Documentation]
@@ -213,7 +213,7 @@ Select dropdown menu answer
     ...    '${select_element_value}'=='None' and '${select_element_text}'!='None' and ${element_count} > 0
     ...    Select From List By Label     ${element}    ${select_element_text}
     ${selected_option}    Get Selected List Label    ${element}
-    [Return]    ${selected_option}
+    RETURN    ${selected_option}
     
 Verify Element On Page
     [Arguments]
@@ -425,7 +425,7 @@ Get Random Option From List And Click Element
     ${random_number}    Generate Random Number For The Locator    ${ele_loc}    ${start_range}
     Find, Scroll To and Click Element       ${ele_loc}:eq(${random_number})
     ${innerText}    Get Text    ${ele_loc}:eq(${random_number})  
-    [Return]   ${innerText}      
+    RETURN   ${innerText}      
 
 Generate Random Number For The Locator
     [Arguments]    ${loc}    ${start_range}=0
@@ -435,7 +435,7 @@ Generate Random Number For The Locator
     @{elements}    Get WebElements    ${loc}
     ${countOfElements}    Get Length    ${elements}
     ${randomNum}    Evaluate    random.randint(${start_range},${countOfElements}-1)    random   
-    [Return]    ${randomNum}
+    RETURN    ${randomNum}
 
 Choose File From Desktop
 

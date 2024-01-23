@@ -81,7 +81,7 @@ ${total_funding_offered}        xpath=//div[@class='title'][contains(text(),'Tot
 ${approval_status}          xpath=//div[@class='title'][contains(text(),'Approval Status')]//following-sibling::div
 
 #Project Details
-${overview_det_header}        xpath=//h3[contains(text(),'Details')]
+${overRETURN_det_header}        xpath=//h3[contains(text(),'Details')]
 ${proj_det_proj_name}        xpath=//div[@class='title'][contains(text(),'Project Name')]//following-sibling::div
 ${proj_det_proj_desc}        xpath=//div[@class='title'][contains(text(),'Description')]//following-sibling::div
 ${proj_tier}        xpath=//div[@class='title'][contains(text(),'Project Tier')]//following-sibling::div
@@ -380,11 +380,11 @@ ${agreement_tab}          xpath=//span[contains(text(),'Compliance')]
 #Obligations
 ${agreement_obligations_header}         xpath=//h3[contains(text(),'Agreement Obligations')]
 ${agreement_obligations_title_header}         xpath=//h3[contains(text(),'Agreement Obligations')]//ancestor::div[@class='panel-inner']//following-sibling::div[@class='panel-body']//div[contains(text(),'Title')]
-${agreement_title}         xpath=//div[contains(text(),'Title')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${agreement_responsible_party}         xpath=//div[contains(text(),'Responsible Party')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
-${agreement_compliance_status}         xpath=//div[contains(text(),'Compliance Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
-${agreement_claw_back_provision}         xpath=//div[contains(text(),'Claw back Provision')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]//div
-${agreement_frequency}          xpath=//div[contains(text(),'Agreement Frequency')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[5]
+${agreement_title}         xpath=//div[contains(text(),'Title')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${agreement_responsible_party}         xpath=//div[contains(text(),'Responsible Party')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
+${agreement_compliance_status}         xpath=//div[contains(text(),'Compliance Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
+${agreement_claw_back_provision}         xpath=//div[contains(text(),'Claw back Provision')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]//div
+${agreement_frequency}          xpath=//div[contains(text(),'Agreement Frequency')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[5]
 ${agreement_obligations_add_btn}        xpath=//a[@class='btn btn-primary'][contains(text(),'Add')]
 #add_agreement_obligation
 ${add_agreement_title_div_check}        xpath=//div[@class='dx-show-invalid-badge dx-textbox dx-texteditor dx-editor-outlined dx-widget dx-validator dx-visibility-change-handler']
@@ -416,9 +416,9 @@ ${agreement_sts_update_btn}     xpath=//span[contains(text(),'Update')]
 ${agreement_obligation_edit_btn}     xpath=//td[contains(text(),'${tadd_agreement_title}')]//following-sibling::td//div[@class='edit-delete-actions']//button//*[local-name()='svg' and @data-icon='pen-to-square']
 #Documents
 ${agreement_doc_header}         xpath=//h3[contains(text(),'Agreement Documents')]
-${agreement_filename}       xpath=//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//div
-${agreement_type}       xpath=//div[contains(text(),'Agreement Type')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//div
-${agreement_uploaded_dtm}       xpath=//div[contains(text(),'Date Uploaded')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
+${agreement_filename}       xpath=//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//div
+${agreement_type}       xpath=//div[contains(text(),'Agreement Type')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//div
+${agreement_uploaded_dtm}       xpath=//div[contains(text(),'Date Uploaded')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
 ${uploaded_btn_text}       xpath=//div[contains(text(),'Click or drag and drop')]
 ${upload_agrmt_doc}       xpath=//div[@class='dx-fileuploader-input-container']//input[@type='file']
 #//div[@class='file-uploader-trigger']
@@ -437,7 +437,7 @@ ${agrmt_draft_type_dd}       xpath=//span[contains(text(),'Project Agreement Dra
 ${agrmt_draft_type_option}       xpath=//div[contains(text(),'${tagrmt_type}')]
 ${agrmt_edit_popup_save_btn}        xpath=//span[contains(text(),'Save')]
 ${agrmt_edited_agrmt_type_txt}        xpath=//div[contains(text(),'ADOPTED')]
-${agrmt_doc_view_btn}       xpath=//h3[contains(text(),'Agreement Documents')]//ancestor::div[@class='panel']//td//div[text()[contains(., '${tagreement_doc_name}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][1]
+${agrmt_doc_RETURN_btn}       xpath=//h3[contains(text(),'Agreement Documents')]//ancestor::div[@class='panel']//td//div[text()[contains(., '${tagreement_doc_name}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][1]
 
 #Delete agreement document
 ${agreement_doc_del_btn}     xpath=//div[text()[contains(.,'${tagreement_doc_name1}')]]//parent::td//following-sibling::td//button[@class='btn btn-danger']
@@ -453,31 +453,31 @@ ${dwnld_third_party_files_only_option}      xpath=//div[contains(text(),'Third P
 ${dwnld_system_files_only_option}      xpath=//div[contains(text(),'System')]
 #Applicant
 ${applicant_files_filename_header}         xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div[@class='panel-body']//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//div[contains(text(),'File Name')]
-${applicant_files_filename}         xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${applicant_files_uploaded_dtm}         xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//span
-${applicant_files_status}           xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
-${applicant_files_comments}     xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
+${applicant_files_filename}         xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${applicant_files_uploaded_dtm}         xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//span
+${applicant_files_status}           xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
+${applicant_files_comments}     xpath=//h3[contains(text(),'Applicant')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
 #Staff
 ${staf_files_filename_header}         xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div[@class='panel-body']//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//div[contains(text(),'File Name')]
-${staff_files_filename}         xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${staff_files_uploaded_dtm}     xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//span
-${staff_files_status}       xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
-${staff_files_comments}     xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
+${staff_files_filename}         xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${staff_files_uploaded_dtm}     xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//span
+${staff_files_status}       xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
+${staff_files_comments}     xpath=//h3[contains(text(),'Staff')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
 #third Party
-${thirdparty_files_filename}         xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${thirdparty_files_uploaded_dtm}     xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
-${thirdparty_files_status}       xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
-${thirdparty_files_comments}     xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
+${thirdparty_files_filename}         xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${thirdparty_files_uploaded_dtm}     xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
+${thirdparty_files_status}       xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
+${thirdparty_files_comments}     xpath=//h3[contains(text(),'Third Party')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
 #system
-${system_files_filename}         xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${system_files_uploaded_dtm}        xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
-${system_files_status}       xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
-${system_files_comments}     xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
+${system_files_filename}         xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'File Name')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${system_files_uploaded_dtm}        xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Uploaded Date/Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
+${system_files_status}       xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
+${system_files_comments}     xpath=//h3[contains(text(),'System')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Comments')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]
 
 #upload file
 #${upload_file_doc}       xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[@class='file-uploader-trigger']
 
-#${file_doc_view_btn}       xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][1]
+#${file_doc_RETURN_btn}       xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][1]
 ${file_doc_approve_btn}       xpath=//span[@class='dx-button-text'][text()[contains(., 'Approve')]]
 ${file_doc_reject_btn}       xpath=//span[@class='dx-button-text'][text()[contains(., 'Reject')]]
 ${file_confirm_popup_approve_btn}       xpath=//span[contains(text(),'Approve')]
@@ -496,14 +496,14 @@ ${compliance_agreement_mandate_title1}      xpath=(//div[@class='panel-body']//d
 ${compliance_agreement_desc1}        xpath=(//div[@class='panel-body']//div[@class='title'][contains(text(),'Description')]//following-sibling::div[@class='value'])[1]
 ${compliance_agreement_resp_party1}      xpath=(//div[@class='panel-body']//div[@class='title'][contains(text(),'Responsible Party')]//following-sibling::div[@class='value'])[1]
 ${compliance_status1}       xpath=(//div[@class='panel-body']//div[@class='title'][contains(text(),'CompStatus')]//following-sibling::div[@class='value'])[1]
-${pastdue_agreement_title1}     xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[1])[1]
-${pastdue_requested1}        xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[2])[1]
-${pastdue_status1}      xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[3])[1]
-${pastdue_duedate1}     xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[4])[1]
-${upcoming_agreement_title1}        xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[1])[1]
-${upcoming_requested1}      xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[2])[1]
-${upcoming_status1}     xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[3])[1]
-${upcoming_duedate1}        xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[4])[1]
+${pastdue_agreement_title1}     xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[1])[1]
+${pastdue_requested1}        xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[2])[1]
+${pastdue_status1}      xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[3])[1]
+${pastdue_duedate1}     xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Past Due')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[4])[1]
+${upcoming_agreement_title1}        xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[1])[1]
+${upcoming_requested1}      xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[2])[1]
+${upcoming_status1}     xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[3])[1]
+${upcoming_duedate1}        xpath=(//div[@class='panel-classification-sub-heading'][contains(text(),'Upcoming')]//following-sibling::div[@class='data-grid-wrapper'][1]//div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//table[@class='dx-datagrid-table dx-datagrid-table-fixed']//tr[@class='dx-row dx-data-row dx-column-lines']//td[4])[1]
 
 #Audit
 ${audit_tab}          xpath=//span[contains(text(),'Audit')]
@@ -524,15 +524,15 @@ ${temp_audit_nxt_pg}              xpath=//div[@aria-label='Next Page']
 ${correspondence_tab}          xpath=//span[contains(text(),'Correspondence')]
 #Notes
 ${correspondence_notes_datetime_header}         xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div[@class='data-grid-wrapper']//div[@class='dx-datagrid-headers']//tbody//td//div[contains(text(),'Date Time')]
-${correspondence_notes_datetime}         xpath=//div[contains(text(),'Date Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${correspondence_notes_note}         xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Note')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//div
-${correspondence_notes_projappr_status}           xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Project Approval Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
-${correspondence_notes_vis_to_app}     xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Visible To Applicant')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]//span
-${correspondence_notes_by}          xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'By')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[5]//span
+${correspondence_notes_datetime}         xpath=//div[contains(text(),'Date Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${correspondence_notes_note}         xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Note')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]//div
+${correspondence_notes_projappr_status}           xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Project Approval Status')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]//span
+${correspondence_notes_vis_to_app}     xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Visible To Applicant')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[4]//span
+${correspondence_notes_by}          xpath=//h3[contains(text(),'Notes')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'By')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[5]//span
 #Sent Messages
-${correspondence_sentmessages_subject}          xpath=//h3[contains(text(),'Sent Messages')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Subject')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
-${correspondence_sentmessages_datetime}         xpath=//h3[contains(text(),'Sent Messages')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Date And Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
-${correspondence_sentmessages_recp_email}         xpath=//h3[contains(text(),'Sent Messages')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Recepient')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsview dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]
+${correspondence_sentmessages_subject}          xpath=//h3[contains(text(),'Sent Messages')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Subject')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[1]
+${correspondence_sentmessages_datetime}         xpath=//h3[contains(text(),'Sent Messages')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Date And Time')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[2]
+${correspondence_sentmessages_recp_email}         xpath=//h3[contains(text(),'Sent Messages')]//parent::div[@class='panel-inner']//following-sibling::div//div[contains(text(),'Recepient')]//ancestor::div[@class='dx-datagrid-headers']//following-sibling::div[@class='dx-datagrid-rowsRETURN dx-scrollable dx-visibility-change-handler dx-scrollable-both dx-scrollable-simulated']//tbody//tr[1]//td[3]
 ${add_msg_btn}     xpath=//button[contains(text(),'Add Message')]
 #send message popup
 ${send_msg_popup_header}        xpath=//div[contains(text(),'Message Details')]
@@ -576,7 +576,7 @@ Project: Admin adds a new Project
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Hover Mouse    ${incentive_program_dd}
     Input Text for New Fields    ${incentive_program_dd}        ${program_option}
-#    Wait Until Keyword Succeeds    1sec    10sec        Run Keyword And Ignore Error        Scroll Element Into View     xpath=//div[@role='option']//div[contains(text(),'${program_option}')]
+#    Wait Until Keyword Succeeds    1sec    10sec        Run Keyword And Ignore Error        Scroll Element Into RETURN     xpath=//div[@role='option']//div[contains(text(),'${program_option}')]
 #    Wait Until Element Is Visible    xpath=//div[@role='option']//span[contains(text(),'${program_option}')]     5
     Find And Click Element    xpath=//div[@role='option']//span[contains(text(),'${program_option}')]
     Wait Until Element Is Not Visible    ${loader_icon}     60
@@ -592,17 +592,17 @@ Project: Admin adds a new Project
     Find And Click Element    ${district_dd}
     Find And Click Element    xpath=//div[contains(text(),'${dist_name}')]
     Find And Click Element    ${assign_bus_radio}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${assign_bus_radio}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${assign_bus_radio}
     Wait Until Element Is Not Visible    ${loader_icon}     20
 #    Wait Until Page Contains Element    ${sel_buss_dd}      30
-    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        1s      Scroll Element Into View     ${down_proj_create_btn}
+    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        1s      Scroll Element Into RETURN     ${down_proj_create_btn}
     Hover Mouse    ${sel_buss_dd}
     Find And Click Element    ${sel_buss_dd}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${bus_option}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${bus_option}
 #    Hover Mouse    ${bus_option}
 #    Find And Click Element    ${bus_option}
     Wait Until Element Is Not Visible    ${loader_icon}     20
-    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        1s      Scroll Element Into View     ${down_proj_create_btn}
+    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        1s      Scroll Element Into RETURN     ${down_proj_create_btn}
 #    Hover Mouse    ${sel_buss_dd}
     Find And Click Element    ${sel_buss_dd}
     Hover Mouse    ${bus_option}
@@ -610,11 +610,11 @@ Project: Admin adds a new Project
     Wait Until Element Is Not Visible    ${loader_icon}
     Wait Until Page Contains Element    ${assigned_user_dd}
     Hover Mouse    ${assigned_user_dd}
-    Run Keyword and Ignore Error        Scroll Element Into View     ${assigned_user_dd}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN     ${assigned_user_dd}
     Find And Click Element    ${assigned_user_dd}
-    Run Keyword and Ignore Error        Scroll Element Into View     ${assigned_user_option}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN     ${assigned_user_option}
     Find And Click Element    ${assigned_user_option}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${down_proj_create_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${down_proj_create_btn}
     Find And Click Element    ${down_proj_create_btn}        validate_elementvisible=${added_success_msg}
     Wait Until Element Is Not Visible       ${added_success_msg}
 
@@ -639,7 +639,7 @@ Project: Admin Searches for a Project and navigates to Project details
     Press Keys    ${search_ip}      ENTER
 #    Find And Click Element    ${filter_btn}
     Wait Until Element Is Not Visible       ${loader_icon}      60
-    Run Keyword And Ignore Error        Scroll Element Into View     xpath=//p[text()[contains(., '${tsearch_ip}')]]//following-sibling::div[contains(text(),'${tproj_buss}')]//ancestor::td//following-sibling::td//a[@class='btn btn-info']
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     xpath=//p[text()[contains(., '${tsearch_ip}')]]//following-sibling::div[contains(text(),'${tproj_buss}')]//ancestor::td//following-sibling::td//a[@class='btn btn-info']
 #    //p[text()[contains(., '${tsearch_ip}')]]//ancestor::td//following-sibling::td//span[contains(text(),'${texist_proj_status}')]//parent::td//following-sibling::td//a[@class='btn btn-info']
     Find And Click Element    xpath=//p[text()[contains(., '${tsearch_ip}')]]//following-sibling::div[contains(text(),'${tbuss}')]//ancestor::td//following-sibling::td//a[@class='btn btn-info']
 
@@ -757,10 +757,10 @@ Project: Admin Reads property information
 
     Wait Until Page Contains Element    ${prop_info}        30
     Wait Until Element Is Visible    xpath=//h3[contains(text(),'Proposed Changes')]        30
-    Run Keyword And Ignore Error        Scroll Element Into View     ${prop_info}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${prop_info}
     Find And Click Element    ${prop_info}
     Wait Until Page Contains Element    ${parcel_id}
-    Run Keyword And Ignore Error        Scroll Element Into View     ${parcel_id}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${parcel_id}
     Compare Actual Element text and expected text       ${parcel_id}        ${tappl_parcel_id1}
 #    Compare Actual Element text and expected text       ${parcel_id}        ${tedit_prop_info_parcel_id1}
     #Compare Actual Element text and expected text       ${parcel_addr}        ${tparcel_addr}
@@ -773,13 +773,13 @@ Project: Admin Reads property information
 Project: Admin Reads developer information
     [Documentation]    admin reads developer information
 
-    Run Keyword And Ignore Error        Scroll Element Into View    ${dev_info}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN    ${dev_info}
     Find And Click Element    ${dev_info}
 #    Wait Until Page Contains Element    ${dev_info_header}      10
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Compare Actual Element text and expected text       ${applicant_type}        ${tdev_info_popup_role_option}
     Compare Actual Element text and expected text       ${dev_info_applicant_name}        ${tdev_info_popup_ind_option}
-    Run Keyword And Ignore Error        Scroll Element Into View     ${buss_name}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${buss_name}
     Wait Until Element Contains    ${buss_name}    ${tproj_buss}
     Compare Actual Element text and expected text       ${buss_name}        ${tproj_buss}
 #    Compare Actual Element text and expected text       ${phone}        ${tphone}
@@ -792,12 +792,12 @@ Project: Admin Reads developer information
 Project: Admin Reads eligible costs
     [Documentation]    admin reads eligible costs
 
-    Run Keyword And Ignore Error        Scroll Element Into View     ${elig_costs}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${elig_costs}
     Find And Click Element    ${elig_costs}
     Wait Until Page Contains Element    ${site_clearance_subtotal_value}        10
     ${tclearingOrgrading_elg_cost_input_doll}=       TestData: Convert string to dollars   ${tclearingOrgrading_elg_cost_input}
     Wait Until Element Contains    ${site_clearance_subtotal_value}        ${tclearingOrgrading_elg_cost_input_doll}
-#    Run Keyword And Ignore Error        Scroll Element Into View     ${acquistion_subtotal_value}
+#    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${acquistion_subtotal_value}
 #    Compare Actual Element text and expected text       ${acquistion_subtotal_value}        ${tacquistion_subtotal_value}
 #    Compare Actual Element text and expected text       ${demolition_subtotal_value}        ${tdemolition_subtotal_value}
     Compare Actual Element text and expected text       ${site_clearance_subtotal_value}        ${tclearingOrgrading_elg_cost_input_doll}
@@ -809,7 +809,7 @@ Project: Admin Reads eligible costs
 Project: Admin Reads financing details
     [Documentation]    admin reads financing details
 
-    Run Keyword And Ignore Error        Scroll Element Into View     ${fin_det}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${fin_det}
     Find And Click Element    ${fin_det}
     Wait Until Page Contains Element    ${funding_request}      10
     Compare Actual Element text and expected text       ${funding_request}        ${tfunding_request}
@@ -826,10 +826,10 @@ Project: Admin Reads financing details
 Project: Admin Reads estimated timeline
     [Documentation]    admin reads estimated timeline
 
-    Run Keyword And Ignore Error        Scroll Element Into View     ${es_timeline}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${es_timeline}
     Find And Click Element    ${es_timeline}
     Wait Until Page Contains Element    ${es_strt_dt}       15
-    Run Keyword And Ignore Error        Scroll Element Into View     ${es_strt_dt}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${es_strt_dt}
 #    Compare Actual Element text and expected text       ${es_strt_dt}        ${tes_strt_dt}  --need to convert date
     Compare Actual Element text and expected text       ${es_title1}        ${tphase1_input}
     Compare Actual Element text and expected text       ${es_desc1}        ${tdescription1_input}
@@ -837,7 +837,7 @@ Project: Admin Reads estimated timeline
 Project: Admin Reads projections
     [Documentation]    admin reads projections
 
-    Run Keyword And Ignore Error        Scroll Element Into View    ${projections}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN    ${projections}
     Find And Click Element    ${projections}
     Wait Until Element Contains    xpath=//div[@class='panel h-auto']//div[@class='title'][contains(text(),'Jobs Created')]//following-sibling::div[@class='value']    ${tproj_jobs_created_textbox}      30
     Compare Actual Element text and expected text       ${projections_jobs_created}        ${tproj_jobs_created_textbox}
@@ -847,7 +847,7 @@ Project: Admin Reads projections
 Project: Admin Reads parties
     [Documentation]    admin reads parties
 
-    Run Keyword And Ignore Error        Scroll Element Into View    ${parties}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN    ${parties}
     Find And Click Element    ${parties}
     Compare Actual Element text and expected text       ${prop_own_buss_name}        ${tparty_edit_prop_own_buss_name_input}
     Compare Actual Element text and expected text       ${prop_own_buss_ein}        ${tparty_edit_prop_own_buss_ein_input}
@@ -860,7 +860,7 @@ Project: Admin Reads parties
 Project: Admin Reads Document Colleciton
     [Documentation]    admin reads document collection
 
-    Run Keyword And Ignore Error        Scroll Element Into View     ${doc_coll}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${doc_coll}
     Find And Click Element    ${doc_coll}
     Wait Until Page Contains Element    ${doc_coll_header}
     Wait Until Page Contains Element        ${doc_coll_file_ele}
@@ -869,7 +869,7 @@ Project: Admin Reads Document Colleciton
 Project: Admin Reads Declarations
     [Documentation]    admin reads declarations
 
-    Run Keyword And Ignore Error        Scroll Element Into View     ${declarations}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${declarations}
     Find And Click Element    ${declarations}
     Wait Until Page Contains Element    ${app_ans_val}
     Element Should Contain    ${app_ans_val}    ${tapp_ans_val}
@@ -877,8 +877,8 @@ Project: Admin Reads Declarations
 Project: Admin Reads Agreement
     [Documentation]    admin reads agreement
 
-    Run Keyword And Ignore Error    Scroll Element Into View    ${proj_header}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${agreement_tab}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${proj_header}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${agreement_tab}
     Hover Mouse    ${agreement_tab}
     Find And Click Element    ${agreement_tab}
     Wait Until Page Contains Element    ${agreement_obligations_title_header}       15
@@ -888,7 +888,7 @@ Project: Admin Reads Agreement
     Compare Actual Element text and expected text       ${agreement_compliance_status}        ${tedit_agreement_obl_status}
 #    Compare Actual Element text and expected text       ${agreement_claw_back_provision}        ${tagreement_claw_back_provision}
     Compare Actual Element text and expected text       ${agreement_frequency}        ${tagreement_frequency}
-    Run Keyword And Ignore Error        Scroll Element Into View     ${agreement_filename}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${agreement_filename}
     Compare Actual Element text and expected text       ${agreement_filename}        ${tagreement_doc_name}
     Compare Actual Element text and expected text       ${agreement_type}        ${tagreement_type}
 #    Compare Actual Element text and expected text       ${agreement_uploaded_dtm}        ${tagreement_uploaded_dtm}
@@ -896,14 +896,14 @@ Project: Admin Reads Agreement
 Project: Admin Reads Files
     [Documentation]    admin reads files
 
-    Run Keyword And Ignore Error    Scroll Element Into View    ${proj_header}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${files_tab}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${proj_header}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${files_tab}
     Hover Mouse    ${files_tab}
     Find And Click Element    ${files_tab}
 #    Wait Until Page Contains Element    ${applicant_files_filename_header}       15
     Compare Actual Element text and expected text       ${applicant_files_filename}        ${appl_filename}
     Wait Until Page Contains Element    ${staf_files_filename_header}       15
-    Run Keyword And Ignore Error    Scroll Element Into View    ${staff_files_filename}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${staff_files_filename}
     Compare Actual Element text and expected text       ${staff_files_filename}        ${tfile_doc_name}
     Compare Actual Element text and expected text       ${third_party_files_filename}        ${tfile_doc_name1}
 
@@ -931,9 +931,9 @@ Project: Create Audit Data
     [Documentation]    creates audit data in tuples
 
     Wait Until Page Contains Element    ${audit_tab}       15
-    Run Keyword And Ignore Error    Scroll Element Into View    ${audit_tab}
-    Wait Until Page Contains Element    ${overview_det_header}       15
-    Run Keyword And Ignore Error    Scroll Element Into View    ${overview_det_header}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${audit_tab}
+    Wait Until Page Contains Element    ${overRETURN_det_header}       15
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${overRETURN_det_header}
     Find And Click Element    ${audit_tab}
     Wait Until Page Contains Element    ${audit_tab_header}       15
     Wait Until Keyword Succeeds    2min    5sec    Wait Until Page Contains Element    ${audit_dtm1}
@@ -971,7 +971,7 @@ Project: Create Audit Data
              ${page_check}=  Convert To Integer  0
         END
     END
-    [Return]    @{audit_data}
+    RETURN    @{audit_data}
 
 Project: Admin Reads Correspondence
     [Documentation]    admin reads correspondence
@@ -992,10 +992,10 @@ Project: Admin Edits Property Info
 
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${prop_info}        20
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View     ${prop_info}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN     ${prop_info}
     Find And Click Element    ${prop_info}
     Wait Until Element Is Visible    ${prop_info_edit_btn}      20
-    Run Keyword And Ignore Error    Scroll Element Into View    ${prop_info_edit_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${prop_info_edit_btn}
     Find And Click Element    ${prop_info_edit_btn}
     Wait Until Page Contains Element    ${prop_info_edit_parcel_textbox}     15
     Wait Until Element is Visible       ${prop_info_parcel_id}
@@ -1019,7 +1019,7 @@ Project: Admin Edits developer information
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${dev_info}     30
     Wait Until Element Is Not Visible    ${loader_icon}     60
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View     ${dev_info}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN     ${dev_info}
     Find And Click Element    ${dev_info}
     Wait Until Element Is Visible    ${dev_info_edit_btn}      20
     Find And Click Element    ${dev_info_edit_btn}
@@ -1042,23 +1042,23 @@ Project: Admin Edits developer information
 #    Wait Until Page Contains Element    ${dev_info_popup_buss_dd}
 #    Hover Mouse    ${dev_info_popup_buss_dd}
 #    Find And Click Element    ${dev_info_popup_buss_dd}
-#    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View    ${dev_info_popup_buss_option}
+#    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN    ${dev_info_popup_buss_option}
 #    Find And Click Element    ${dev_info_popup_buss_dd}
 #    Hover Mouse     ${dev_info_popup_buss_option}
 #    Find And Click Element    ${dev_info_popup_buss_option}
     Wait Until Element Is Not Visible    ${loader_icon}     60
-    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View    ${dev_info_popup_role_dd}
+    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN    ${dev_info_popup_role_dd}
     Wait Until Page Contains Element    ${dev_info_popup_assigned_user_dd}
     Hover Mouse    ${dev_info_popup_assigned_user_dd}
     Find And Click Element    ${dev_info_popup_assigned_user_dd}
-    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View    ${dev_info_popup_assigned_user_option}
+    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN    ${dev_info_popup_assigned_user_option}
     Find And Click Element    ${dev_info_popup_assigned_user_option}
-    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View    ${dev_info_popup_role_dd}
+    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN    ${dev_info_popup_role_dd}
     Hover Mouse    ${dev_info_popup_role_dd}
     Find And Click Element    ${dev_info_popup_role_dd}
-    Wait Until Keyword Succeeds    0.01sec    10sec    Scroll Element Into View     ${dev_info_popup_role_option}
+    Wait Until Keyword Succeeds    0.01sec    10sec    Scroll Element Into RETURN     ${dev_info_popup_role_option}
     Find And Click Element    ${dev_info_popup_role_option}
-#    Wait Until Keyword Succeeds    0.01sec    10sec    Scroll Element Into View     ${dev_info_popup_ok_btn}
+#    Wait Until Keyword Succeeds    0.01sec    10sec    Scroll Element Into RETURN     ${dev_info_popup_ok_btn}
     Find And Click Element    ${dev_info_popup_ok_btn}
 #    Wait Until Element Is Visible    ${added_success_msg}       10
 #    Wait Until Element Is Not Visible    ${added_success_msg}       10
@@ -1073,17 +1073,17 @@ Project: Admin Edits eligible costs
     Wait Until Page Does Not Contain Element    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${elig_costs}   30
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View     ${elig_costs}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN     ${elig_costs}
     Find And Click Element    ${elig_costs}
     Wait Until Page Contains Element    ${elg_costs_edit_btn}      20
-    Run Keyword And Ignore Error    Scroll Element Into View     ${elg_costs_edit_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${elg_costs_edit_btn}
     Find And Click Element    ${elg_costs_edit_btn}
     Wait Until Page Does Not Contain Element    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${clearingOrgrading_elg_cost_input}
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec        Scroll Element Into View    ${clearingOrgrading_elg_cost_input}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec        Scroll Element Into RETURN    ${clearingOrgrading_elg_cost_input}
     Clear And Type Into Element    ${clearingOrgrading_elg_cost_input}    ${tclearingOrgrading_elg_cost_input}
-    Wait Until Keyword Succeeds     1min        1sec        Scroll Element Into View    ${other_elg_cost_input}
+    Wait Until Keyword Succeeds     1min        1sec        Scroll Element Into RETURN    ${other_elg_cost_input}
     Clear And Type Into Element    ${other_elg_cost_input}    ${tother_elg_cost_input}
     Find And Click Element    ${elg_cost_popup_ok_btn}
 #          120      validate_elementvisible=${added_success_msg}
@@ -1100,7 +1100,7 @@ Project: Admin Edits financing details
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${fin_det}      30
     Wait Until Element Is Visible    ${fin_det}      30
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View    ${fin_det}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN    ${fin_det}
     Find And Click Element    ${fin_det}
     Wait Until Element Is Visible    ${fin_det_fund_req_text}
 #    Wait Until Element Is Visible    xpath=//h3[contains(text(),'Proposed Changes')]        30
@@ -1142,7 +1142,7 @@ Project: Admin Edits estimated timeline
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${es_timeline}      15
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View    ${es_timeline}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN    ${es_timeline}
     Find And Click Element    ${es_timeline}
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Element Is Visible    ${es_timeline_edit_btn}      20
@@ -1163,18 +1163,18 @@ Project: Admin Edits estimated timeline
 #    Clear And Type Into Element    ${phase1_input}    ${tphase1_input}
 #    Clear And Type Into Element    ${date1_input}    ${tdate1_input}
 #    Clear And Type Into Element    ${description1_input}    ${tdescription1_input}
-#    Run Keyword And Ignore Error     Wait Until Keyword Succeeds    0.01sec    10sec    Scroll Element Into View     ${responsible_party1_dd}
+#    Run Keyword And Ignore Error     Wait Until Keyword Succeeds    0.01sec    10sec    Scroll Element Into RETURN     ${responsible_party1_dd}
 #    Hover Mouse    ${responsible_party1_dd}
 #    Find And Click Element    ${responsible_party1_dd}
 #    Hover Mouse    ${responsible_party1_option1}
 #    Find And Click Element    ${responsible_party1_option1}
-#    Run Keyword And Ignore Error        Scroll Element Into View     ${completion_status1_dd}
+#    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${completion_status1_dd}
 #    Hover Mouse    ${completion_status1_dd}
 #    Find And Click Element    ${completion_status1_dd}
-#    Run Keyword And Ignore Error        Scroll Element Into View     ${completion_status1_option1}
+#    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${completion_status1_option1}
 #    Hover Mouse    ${completion_status1_option1}
 #    Find And Click Element    ${completion_status1_option1}
-#    Run Keyword And Ignore Error        Scroll Element Into View     ${updated_datetime1_input}
+#    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${updated_datetime1_input}
 #    Clear And Type Into Element    ${updated_datetime1_input}    ${tupdated_datetime1_input}
     Find And Click Element    ${es_timeline_submit_btn}
 #          120     validate_elementvisible=${added_success_msg}
@@ -1188,7 +1188,7 @@ Project: Admin Edits projections
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${projections}      30
-    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        5secs       Scroll Element Into View    ${projections}
+    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        5secs       Scroll Element Into RETURN    ${projections}
     Find And Click Element    ${projections}
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Element Contains    xpath=//div[@class='panel-body']//div[@class='title'][contains(text(),'Jobs Created')]//following-sibling::div[@class='value']    ${tproj_jobs_created_text}      30
@@ -1201,13 +1201,13 @@ Project: Admin Edits projections
 #    Find And Click Element    ${proj_jobs_retained_add_another_btn}
     Wait Until Element Is Visible    ${proj_jobs_retained_textbox}
     Input Text for New Fields    ${proj_jobs_retained_textbox}       ${tproj_jobs_retained_textbox}
-#    Wait Until Keyword Succeeds    1min    0.001sec    Scroll Element Into View    ${proj_trees_planted_add_another_btn}
+#    Wait Until Keyword Succeeds    1min    0.001sec    Scroll Element Into RETURN    ${proj_trees_planted_add_another_btn}
 #    Find And Click Element    ${proj_trees_planted_add_another_btn}
 #    Mouse Click    ${proj_trees_planted_text}
-#    Run Keyword And Ignore Error    Scroll Element Into View     ${proj_trees_planted_add_another_btn}
+#    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${proj_trees_planted_add_another_btn}
 #    Wait Until Keyword Succeeds    1min    0.001sec    Javascript Scroll to Element    ${proj_trees_planted_text}
 #    Wait Until Keyword Succeeds    1min    0.001sec    Javascript Scroll to Element    ${proj_trees_planted_textbox}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${proj_trees_planted_textbox}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${proj_trees_planted_textbox}
     Wait Until Element Is Visible    ${proj_trees_planted_textbox}
     Input Text for New Fields    ${proj_trees_planted_textbox}       ${tproj_trees_planted_textbox}
     Find And Click Element    ${proj_submit_btn}
@@ -1222,25 +1222,25 @@ Project: Admin Edits parties
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
 #    Wait Until Page Contains Element    ${parties}      30
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View   ${parties}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN   ${parties}
     Find And Click Element    ${parties}
     Wait Until Element Is Visible    ${parties_edit_btn}      20
     Find And Click Element    ${parties_edit_btn}
     Wait Until Element Is Visible    ${party_edit_buss_name_input}      15
-    Run Keyword and Ignore Error        Scroll Element Into View    ${party_edit_prop_own_buss_name_input}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN    ${party_edit_prop_own_buss_name_input}
     Clear And Type Into Element    ${party_edit_prop_own_buss_name_input}    ${tparty_edit_prop_own_buss_name_input}
     Clear And Type Into Element    ${party_edit_prop_own_buss_ein_input}    ${tparty_edit_prop_own_buss_ein_input}
-    Run Keyword and Ignore Error        Scroll Element Into View    ${party_edit_prop_own_zip_input}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN    ${party_edit_prop_own_zip_input}
     Clear And Type Into Element    ${party_edit_prop_own_first_name_input}    ${tparty_edit_prop_own_first_name_input}
     Clear And Type Into Element    ${party_edit_prop_own_last_name_input}    ${tparty_edit_prop_own_last_name_input}
     Clear And Type Into Element    ${party_edit_prop_own_phn_no_input}    ${tparty_edit_prop_own_phn_no_input}
     Clear And Type Into Element    ${party_edit_prop_own_email_input}    ${tparty_edit_prop_own_email_input}
     Clear And Type Into Element    ${party_edit_prop_own_addr1_input}    ${tparty_edit_prop_own_addr1_input}
     Clear And Type Into Element    ${party_edit_prop_own_addr2_input}    ${tparty_edit_prop_own_addr2_input}
-    Run Keyword and Ignore Error        Scroll Element Into View    ${party_edit_prop_own_city_input}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN    ${party_edit_prop_own_city_input}
     Clear And Type Into Element    ${party_edit_prop_own_city_input}    ${tparty_edit_prop_own_city_input}
     Clear And Type Into Element    ${party_edit_prop_own_state_input}    ${tparty_edit_prop_own_state_input}
-    Run Keyword and Ignore Error        Scroll Element Into View    ${party_edit_prop_own_zip_input}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN    ${party_edit_prop_own_zip_input}
     Clear And Type Into Element    ${party_edit_prop_own_zip_input}    ${tparty_edit_prop_own_zip_input}
     Find And Click Element    ${party_edit_save_btn}
 #    120        validate_elementvisible=${added_success_msg}
@@ -1254,20 +1254,20 @@ Project: Admin Edits Documentation Collection
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
 #    Wait Until Page Contains Element    ${doc_coll}     30
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into View    ${doc_coll}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        1sec    Scroll Element Into RETURN    ${doc_coll}
     Find And Click Element    ${doc_coll}
     Wait Until Page Contains Element    ${doc_edit_bnt}      20
-    Run Keyword And Ignore Error    Scroll Element Into View    ${doc_edit_bnt}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${doc_edit_bnt}
     Find And Click Element    ${doc_edit_bnt}
 #    Wait Until Keyword Succeeds    0.01sec    10sec    Javascript Scroll to Element     ${doc_coll_upload_btn}
 #    Hover Mouse    ${doc_coll_upload_btn}
 #    Upload File from Desktop using Autoit        ${doc_coll_upload_btn}     ${doc_coll_fileloc}
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds      1min        2secs       Scroll Element Into View     ${uploaded_btn_text}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds      1min        2secs       Scroll Element Into RETURN     ${uploaded_btn_text}
     Choose File From Desktop    ${doc_coll_upload_btn}     ${agrmt_fileloc1}
     Wait Until Page Contains Element    ${doc_coll_upload_icon}     20
-    Run Keyword and Ignore Error        Scroll Element Into View    ${doc_coll_upload_icon}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN    ${doc_coll_upload_icon}
     Find And Click Element    ${doc_coll_upload_icon}
-    Run Keyword and Ignore Error        Scroll Element Into View    ${doc_coll_save_btn}
+    Run Keyword and Ignore Error        Scroll Element Into RETURN    ${doc_coll_save_btn}
     Find And Click Element    ${doc_coll_save_btn}
     Wait Until Element Is Not Visible    ${doc_coll_save_btn}
 
@@ -1300,7 +1300,7 @@ Project: Admin Adds Agreement Obligation
         Wait Until Page Contains Element    ${add_agreement_res_party_option_val_check}
         Find And Click Element    ${add_agreement_res_party_option}
     END
-    Run Keyword And Ignore Error    Scroll Element Into View    ${add_agreement_obl_type_dd}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${add_agreement_obl_type_dd}
     Hover Mouse    ${add_agreement_obl_type_dd}
     Find And Click Element    ${add_agreement_obl_type_dd}
     Find And Click Element    ${add_agreement_obl_type_option}
@@ -1308,16 +1308,16 @@ Project: Admin Adds Agreement Obligation
     Find And Click Element    ${add_agreement_freq_type_dd}
     Find And Click Element    ${add_agreement_freq_type_option}
     Wait Until Page Contains Element    ${add_agreement_freq_type_dd_value}
-#    Run Keyword And Ignore Error    Scroll Element Into View     ${add_agreement_oblig_strt_dt}
+#    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_agreement_oblig_strt_dt}
 #    Input Text for New Fields       ${add_agreement_oblig_strt_dt}        ${tadd_agreement_oblig_strt_dt}
-#    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View     ${add_agreement_oblig_end_dt}
+#    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN     ${add_agreement_oblig_end_dt}
 #    Input Text for New Fields       ${add_agreement_oblig_end_dt}        ${tadd_agreement_oblig_end_dt}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_agreement_oblig_email_addr}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_agreement_oblig_email_addr}
     Input Text for New Fields       ${add_agreement_oblig_email_addr}        ${tadd_agreement_oblig_email_addr}
     global_element_functions.Mouse Click    ${add_agreement_oblig_email_addr}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_agreement_end_dt}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_agreement_end_dt}
     Input Text for New Fields       ${add_agreement_end_dt}        ${tadd_agreement_end_dt}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_agreement_submit_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_agreement_submit_btn}
     Find And Click Element    ${add_agreement_submit_btn}
     Wait Until Element Is Visible    ${added_success_msg}       10
     Wait Until Element Is Not Visible    ${added_success_msg}       10
@@ -1352,19 +1352,19 @@ Project: Admin Edits Agreement Obligation
     Find And Click Element    ${add_agreement_res_party_dd}
 #    Hover Mouse    ${add_agreement_res_party_option}
     Find And Click Element    ${add_agreement_res_party_option}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${add_agreement_freq_type_dd}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${add_agreement_freq_type_dd}
     Hover Mouse    ${add_agreement_freq_type_dd}
     Find And Click Element    ${add_agreement_freq_type_dd}
     Find And Click Element    ${add_agreement_freq_type_option}
     Wait Until Page Contains Element    ${add_agreement_freq_type_dd_value}
-#    Run Keyword And Ignore Error    Scroll Element Into View          ${add_agreement_oblig_strt_dt}
+#    Run Keyword And Ignore Error    Scroll Element Into RETURN          ${add_agreement_oblig_strt_dt}
 #    Clear And Type Into Element       ${add_agreement_oblig_strt_dt}        ${tedit_agreement_oblig_strt_dt}
-#    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View     ${add_agreement_oblig_end_dt}
+#    Run Keyword And Ignore Error    Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN     ${add_agreement_oblig_end_dt}
 #    Clear And Type Into Element       ${add_agreement_oblig_end_dt}        ${tedit_agreement_oblig_end_dt}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_agreement_oblig_email_addr}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_agreement_oblig_email_addr}
     Clear And Type Into Element       ${add_agreement_oblig_email_addr}        ${tedit_agreement_oblig_email_addr}
     global_element_functions.Mouse Click    ${add_agreement_oblig_email_addr}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_agreement_end_dt}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_agreement_end_dt}
     Clear And Type Into Element       ${add_agreement_end_dt}        ${tedit_agreement_end_dt}
     Find And Click Element    ${add_agreement_submit_btn}
     Wait Until Element Is Visible    ${added_success_msg}       10
@@ -1388,8 +1388,8 @@ Project: Admin Navigates to Agreement Document
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Element Is Visible    ${proj_header}     20
-    Run Keyword And Ignore Error    Scroll Element Into View    ${proj_header}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${agreement_tab}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${proj_header}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${agreement_tab}
     Find And Click Element    ${agreement_tab}
     Wait Until Element Is Not Visible    ${loader_icon}     60
 
@@ -1400,17 +1400,17 @@ Project: Admin Uploads Agreement Document
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
 #    Wait Until Element Is Visible    ${proj_header}     20
-#    Run Keyword And Ignore Error    Scroll Element Into View    ${proj_header}
-#    Run Keyword And Ignore Error    Scroll Element Into View    ${agreement_tab}
+#    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${proj_header}
+#    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${agreement_tab}
 #    Find And Click Element    ${agreement_tab}
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${agreement_doc_header}       15
-    Run Keyword And Ignore Error        Scroll Element Into View     ${agreement_doc_header}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${agreement_doc_header}
     Wait Until Page Contains Element    ${uploaded_btn_text}        15
-    Run Keyword And Ignore Error        Scroll Element Into View     ${uploaded_btn_text}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${uploaded_btn_text}
     Choose File From Desktop    ${upload_agrmt_doc}     ${agrmt_fileloc}
     Wait Until Page Contains Element    xpath=//div[@class='dx-fileuploader-file-name'][contains(text(),'${tagreement_doc_name}')]//ancestor::div[@class='dx-fileuploader-file']//preceding-sibling::div//i[@class='dx-icon dx-icon-upload']        30
-    Wait Until Keyword Succeeds     1sec        60sec       Run Keyword And Ignore Error        Scroll Element Into View    xpath=//h3[contains(text(),'KPI Compliance')]
+    Wait Until Keyword Succeeds     1sec        60sec       Run Keyword And Ignore Error        Scroll Element Into RETURN    xpath=//h3[contains(text(),'KPI Compliance')]
     Find And Click Element    xpath=//div[@class='dx-fileuploader-file-name'][contains(text(),'${tagreement_doc_name}')]//ancestor::div[@class='dx-fileuploader-file']//preceding-sibling::div//i[@class='dx-icon dx-icon-upload']
     Wait Until Page Contains Element    ${uploaded_text}        30
     Wait Until Page Contains Element    xpath=//div[@class='dx-fileuploader-file-name'][contains(text(),'${tagreement_doc_name}')]
@@ -1422,7 +1422,7 @@ Project: Admin Edits Agreement Document
 
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
-    Run Keyword And Ignore Error    Scroll Element Into View    ${agrmt_doc_edit_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${agrmt_doc_edit_btn}
     Find And Click Element    ${agrmt_doc_edit_btn}
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Find And Click Element    ${agrmt_draft_type_dd}
@@ -1439,7 +1439,7 @@ Project: Admin Deletes Agreement Document
     Find And Click Element    ${agreement_tab}
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${agreement_doc_del_btn}       30
-    Run Keyword And Ignore Error        Scroll Element Into View    ${agreement_doc_header}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN    ${agreement_doc_header}
     Find And Click Element    ${agreement_doc_del_btn}
     Hover Mouse    ${agrmt_doc_confirm_del_btn}
     Find And Click Element    ${agrmt_doc_confirm_del_btn}
@@ -1447,7 +1447,7 @@ Project: Admin Deletes Agreement Document
 Project: Admin Navigates to Files tab
     [Documentation]    admin navigates to file document
 
-    Wait Until Keyword Succeeds      1sec        60secs       Run Keyword And Ignore Error        Scroll Element Into View     ${files_tab}
+    Wait Until Keyword Succeeds      1sec        60secs       Run Keyword And Ignore Error        Scroll Element Into RETURN     ${files_tab}
     Find And Click Element    ${files_tab}
 
 Project: Admin Uploads File Document
@@ -1457,11 +1457,11 @@ Project: Admin Uploads File Document
     Wait Until Page Contains Element    ${applicant_files_filename_header}       60
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
-    Run Keyword And Ignore Error        Scroll Element Into View     ${staf_files_filename_header}
-    Run Keyword And Ignore Error        Scroll Element Into View     xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[text()[contains(., 'Click or drag and drop')]]
-    Run Keyword And Ignore Error        Scroll Element Into View     xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[@class='file-uploader-trigger']
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${staf_files_filename_header}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[text()[contains(., 'Click or drag and drop')]]
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[@class='file-uploader-trigger']
     Choose File From Desktop    xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[@class='dx-fileuploader-input-container']//input[@type='file']     ${file_tab_fileloc}
-    Run Keyword And Ignore Error        Scroll Element Into View    xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//i[@class='dx-icon dx-icon-upload']
+    Run Keyword And Ignore Error        Scroll Element Into RETURN    xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//i[@class='dx-icon dx-icon-upload']
     Find And Click Element    xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//i[@class='dx-icon dx-icon-upload']
     Wait Until Element Is Visible    xpath=//h3[contains(text(),'${tupload_file_type}')]//ancestor::div[@class='panel']//div[text()[contains(., '${tfile_doc_name}')]]      20
     Wait Until Element Is Not Visible    xpath=//div[@class='dx-progressbar-status']        30
@@ -1474,9 +1474,9 @@ Project: Admin Approve Uploaded File Document
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${applicant_files_filename_header}       30
-    Run Keyword And Ignore Error        Scroll Element Into View     xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][@title='Approve']
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][@title='Approve']
     Find And Click Element    xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-info'][@title='Approve']
-    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into View     ${file_doc_approve_btn}
+    Run Keyword And Ignore Error        Wait Until Keyword Succeeds     1min        2secs       Scroll Element Into RETURN     ${file_doc_approve_btn}
     Hover Mouse    ${file_doc_approve_btn}
     Find And Click Element    ${file_doc_approve_btn}
     Wait Until Element Is Visible    ${added_success_msg}       10
@@ -1489,9 +1489,9 @@ Project: Admin Reject Uploaded File Document
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    ${applicant_files_filename_header}       15
-    Run Keyword And Ignore Error        Scroll Element Into View     xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-danger'][@title='Reject']
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-danger'][@title='Reject']
     Find And Click Element    xpath=//h3//ancestor::div[@class='panel']//td//div[text()[contains(., '${tfile_tab_filename}')]]//parent::td//following-sibling::td//button[@class='btn btn-danger'][@title='Reject']
-#    Run Keyword And Ignore Error        Scroll Element Into View     ${file_doc_reject_btn}
+#    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${file_doc_reject_btn}
 #    Wait Until Page Contains Element    ${file_doc_reject_btn}       15
 #    Hover Mouse    ${file_doc_reject_btn}
 #    Find And Click Element    ${file_doc_reject_btn}
@@ -1505,7 +1505,7 @@ Project: Admin Reject Uploaded File Document
 Project: Admin Downloads File Document
     [Documentation]    admin downloads all files document
 
-    Run Keyword And Ignore Error        Scroll Element Into View     ${files_tab}
+    Run Keyword And Ignore Error        Scroll Element Into RETURN     ${files_tab}
     Find And Click Element    ${files_tab}
     Find And Click Element    ${dwnld_file_btn}
     Find And Click Element    ${dwnld_all_files_option}
@@ -1520,8 +1520,8 @@ Project: Admin Deletes File Document
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${file_doc_del_btn}       15
     Wait Until Page Contains Element    ${applicant_files_filename_header}      30
-    Run Keyword And Ignore Error    Scroll Element Into View    ${applicant_files_filename_header}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${file_doc_del_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${applicant_files_filename_header}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${file_doc_del_btn}
     Find And Click Element    ${file_doc_del_btn}
     Hover Mouse    ${file_doc_confirm_del_btn}
     Find And Click Element    ${file_doc_confirm_del_btn}
@@ -1533,7 +1533,7 @@ Project: Admin sends message from correspondence tab
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Hover Mouse     ${correspondence_tab}
     Find And Click Element    ${correspondence_tab}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_msg_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_msg_btn}
     Find And Click Element    ${add_msg_btn}
     Wait Until Page Contains Element    ${send_msg_popup_header}       15
     Wait Until Page Contains Element    ${send_cust_email}       15
@@ -1549,13 +1549,13 @@ Project: Admin sends message from correspondence tab
     Find And Click Element    ${rec_email_sub}
     Wait Until Page Does Not Contain Element    ${sendto_mails_placeholder}        20
     Wait Until Page Contains Element    ${attachment}       20
-    Run Keyword And Ignore Error    Scroll Element Into View     ${attachment}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${attachment}
     Choose File From Desktop        ${attachment}     ${fileloc}
     Wait Until Page Contains Element    ${uploaded_text}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${uploaded_text}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${uploaded_text}
     Wait Until Page Contains Element    xpath=//div[@class='dx-fileuploader-file-name'][contains(text(),'${tagreement_doc_name}')]
     Wait Until Page Contains Element    ${send_msg_btn}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${send_msg_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${send_msg_btn}
     Find And Click Element    ${send_msg_btn}
     Wait Until Element Is Visible    ${added_success_msg}       30
     Wait Until Element Is Not Visible    ${added_success_msg}       10
@@ -1568,7 +1568,7 @@ Project: Admin sends custom email from correspondence tab
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Find And Click Element    ${correspondence_tab}
     Wait Until Page Contains Element    ${add_msg_btn}       30
-    Run Keyword And Ignore Error    Scroll Element Into View     ${add_msg_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${add_msg_btn}
     Find And Click Element    ${add_msg_btn}
     Wait Until Page Contains Element    ${send_msg_popup_header}       15
     Hover Mouse    ${send_cust_email}
@@ -1576,16 +1576,16 @@ Project: Admin sends custom email from correspondence tab
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Clear And Type Into Element       ${rec_email}      ${trec_email}
     Clear And Type Into Element       ${subject}      ${tsubject}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${corr_body}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${corr_body}
     Clear And Type Into Element       ${corr_body}      ${tcorr_body}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${attachment}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${attachment}
     Choose File From Desktop        ${attachment}     ${fileloc1}
     Wait Until Page Contains Element    ${uploaded_text}
-    Run Keyword And Ignore Error    Scroll Element Into View    ${uploaded_text}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    ${uploaded_text}
     Wait Until Page Contains Element    xpath=//div[@class='dx-fileuploader-file-name'][contains(text(),'${tagreement_doc_name2}')]
     Wait Until Page Contains Element    ${send_msg_btn}
     Wait Until Element Is Visible    ${send_msg_btn}
-    Run Keyword And Ignore Error    Scroll Element Into View     ${send_msg_btn}
+    Run Keyword And Ignore Error    Scroll Element Into RETURN     ${send_msg_btn}
     Find And Click Element    ${send_msg_btn}
     Wait Until Element Is Visible    ${added_success_msg}       30
     Wait Until Element Is Not Visible    ${added_success_msg}       10
@@ -1602,7 +1602,7 @@ Project: Delete a Project
     Wait Until Element Is Not Visible    ${loader_icon}     60
     Wait Until Page Contains Element    ${no_loader_icon}   60
     Wait Until Page Contains Element    xpath=//p[text()[contains(., '${tproj_name}')]]//following-sibling::div[contains(text(),'${tproj_buss}')]//ancestor::td//parent::tr//button[@class='btn btn-danger']
-    Run Keyword And Ignore Error    Scroll Element Into View    xpath=//p[text()[contains(., '${tproj_name}')]]//following-sibling::div[contains(text(),'${tproj_buss}')]//ancestor::td//parent::tr//button[@class='btn btn-danger']
+    Run Keyword And Ignore Error    Scroll Element Into RETURN    xpath=//p[text()[contains(., '${tproj_name}')]]//following-sibling::div[contains(text(),'${tproj_buss}')]//ancestor::td//parent::tr//button[@class='btn btn-danger']
     Find And Click Element    xpath=//p[text()[contains(., '${tproj_name}')]]//following-sibling::div[contains(text(),'${tproj_buss}')]//ancestor::td//parent::tr//button[@class='btn btn-danger']
     Hover Mouse    ${confirm_del_proj_btn}
     Find And Click Element    ${confirm_del_proj_btn}

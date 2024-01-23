@@ -2,8 +2,11 @@
 Documentation    This file contians page objects for login page.
 
 Resource         ../../test_data/testdata.robot
+Resource    ../../../global_shared_resources/custom_functions/global_element_functions.robot
+Resource    ../../../global_shared_resources/custom_functions/global_helper_functions.robot
 Library    ExcelUtil
 Library    SeleniumLibrary
+Library    Collections
 
 *** Variables ***
 ${login_link}     xpath=//span[contains(text(),'Log in')]
@@ -23,14 +26,15 @@ ${reset_pswd}        xpath=//input[@name='newPassword']
 ${reset_cnfrmpswd}         xpath=//input[@name='confirmNewPassword']
 ${reset_pswdbtn}         xpath=//span[contains(text(),'Reset Password')]
 ${added_success_msg}     xpath=//div[@role='alert'][contains(text(),'Record saved successfully!')]
+${file_excel_path}    e:/robot-framework-workspace/AutomationTesting/TestData/Civic_serve_test_data.xlsx
+
 
 *** Keywords ***
-
 
 Read Test Data from Excel
     [Arguments]     ${test_type}    ${esheet}
 
-    ${document}=    Open Excel      TestData/Book2.xlsx
+    ${document}=    Open Excel    ${file_excel_path}
     &{dict} =    Create Dictionary
     ${coumn_count}=     Get Column count    ${esheet}
     ${row_count}=   Get Row count   ${esheet}

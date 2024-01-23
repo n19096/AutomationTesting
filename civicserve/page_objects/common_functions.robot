@@ -34,7 +34,7 @@ Get Text And Convert To Integer
     ${text}    Get Text    ${element}
     ${number}    Get Regexp Matches    ${text}    \\d+
     ${number}    Convert To Integer    ${number}[0]
-    [Return]    ${number}
+    RETURN    ${number}
     
 
 Verify Browser Back Navigation Is Disabled

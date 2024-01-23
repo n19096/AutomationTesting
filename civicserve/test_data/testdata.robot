@@ -775,7 +775,7 @@ ${tkpi_edit_prog}       Tax Increment Financing (TIF) Program
 
 #TestData: Generate random value
 #    ${result} =    Generate Random String    8
-#    [Return]        ${result}
+#    RETURN        ${result}
 
 TestData: Convert string to dollars
     [Documentation]    convert string to dollars
@@ -784,7 +784,7 @@ TestData: Convert string to dollars
     ${number3}= 		Set Variable	${value}
     ${currstring} = 	Evaluate		"{:,.0f}".format(${number3})
     ${number2} = 		Catenate    $${currstring}.00
-    [Return]      ${number2}
+    RETURN      ${number2}
 
 TestData: Create Project Name
     [Documentation]    create a project name

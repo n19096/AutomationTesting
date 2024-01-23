@@ -178,7 +178,7 @@ Check Length Of Copy In Element
     ...    Fail With Failure Details    Error found with length of text in element locator ${actual_copy_loc}: ${get_text_len} ${symbol_matcher} ${exp_length} is False. Investigate element by viewing screen shot and going to above URL in failure details.
     ...    ELSE    Log    ${get_text_len} ${symbol_matcher} ${exp_length} is True
     
-    [Return]    ${check_length_vs_expected}
+    RETURN    ${check_length_vs_expected}
     
 Compare Two Values Are Equal
     [Arguments]    ${first_value}    ${second_value}    ${msg}=${EMPTY}    ${ignore_case}=False    
@@ -209,7 +209,7 @@ Get Text And Strip The Spaces
     
     ${text}    Get Text    ${loc}
     ${text}    Strip String    ${text}
-    [Return]    ${text}
+    RETURN    ${text}
     
 Get Text Using Javascript
     [Arguments]    ${locator}
@@ -219,7 +219,7 @@ Get Text Using Javascript
     ${element_text}    Run Keyword If    '''"''' in '''${locator_ready}'''
     ...    Execute Javascript    return $('${locator_ready}').text();
     ...    ELSE    Execute Javascript   return $("${locator_ready}").text();
-    [Return]    ${element_text}
+    RETURN    ${element_text}
     
 Get CSS Property Value
     [Arguments]    ${locator}    ${attribute_name}
@@ -229,7 +229,7 @@ Get CSS Property Value
 
     ${css}    Get WebElement    ${locator}
     ${prop_val}    Call Method       ${css}    value_of_css_property    ${attribute name}
-    [Return]     ${prop_val}
+    RETURN     ${prop_val}
     
 Actual vs Expected CSS Background Color
     [Documentation]    Get the Web element's CSS Background color
