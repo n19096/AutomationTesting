@@ -1,0 +1,57 @@
+# Python package
+parameters:
+- name: test_path
+  displayName: tests to run
+  type: string
+  default: 'tests'
+  values:
+      - 'tests'
+      - 'tests\adminscenarios'
+      - 'tests\publicuserscenarios'
+      - 'tests\adminscenarios\businesses_tests.robot'
+      - 'tests\adminscenarios\compliance_tests.robot'
+      - 'tests\adminscenarios\contacts_tests.robot'
+      - 'tests\adminscenarios\kpi_tests.robot'
+      - 'tests\adminscenarios\notification_tests.robot'
+      - 'tests\adminscenarios\parcel_tests.robot'
+      - 'tests\adminscenarios\program_management_tests.robot'
+      - 'tests\adminscenarios\templates_tests.robot'
+      - 'tests\adminscenarios\user_management_tests.robot'
+      - 'admin_project_tests'
+      - 'admin_project_tests\projects_tests.robot'
+      - 'tests\publicuserscenarios\apply_tif_tests.robot'
+      - 'tests\publicuserscenarios\applicant_businesses_tests.robot'
+      - 'tests\logintests.robot'
+
+#schedules:
+#- cron: '0 0 * * *'
+#  displayName: Daily build
+#  branches:
+#    include:
+#    - Automation
+
+trigger:
+- none
+
+jobs:
+- job: AutomationJob
+  pool:
+   name: TG
+   demands:
+    - agent.name -equals TgOnPremWin1Agent
+  steps:
+
+    - task: PowerShell@2
+      inputs:
+        targetType: 'inline'
+        script: 'robot --outputdir $(Build.SourcesDirectory)\Results --pythonpath . AutomationTesting\civicserve\web\${{parameters.test_path}}'
+        displayName: 'Run Robot Scripts'
+        continueOnError: true
+
+    - task: PublishPipelineArtifact@1
+      inputs:
+          targetPath: '$(Build.SourcesDirectory)\Results'
+          ArtifactName: 'Report.html'
+          publishLocation: 'pipeline'
+      displayName: 'Publish Results'
+      condition: succeededOrFailed()
