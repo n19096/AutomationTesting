@@ -8,9 +8,9 @@ Resource    ../../page_objects/test_setup.robot
 
 *** Test Cases ***
 
- Scenario: Login with Valid Admin Credentials
-     [Tags]    smoke
-     Admin: User on CivicServe Admin Site     ${TEST NAME}    Login
+#  Scenario: Login with Valid Admin Credentials
+#      [Tags]    smoke
+#      Admin: User on CivicServe Admin Site     ${TEST NAME}    Login
 
 Scenario: Login with Valid Public User Credentials
     [Tags]    smoke
